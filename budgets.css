@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  scrollbar-width: thin;
+  scrollbar-color: transparent;
+  margin: 50px;
+  background-color: palegreen;
+}
+
+#left {
+  width: 300px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 25px;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.min-max {
+  margin-left: 25px;
+}
+
+#left input,
+select,
+option {
+  font-size: large;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+#left button {
+  font-size: large;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+#left button:hover {
+  color: red;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.budget-section {
+  width: 600px;
+  height: 150px;
+  border-radius: 25px;
+  background: rgba(255, 0, 0, 0.227);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.budget-section button {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 560px;
+  bottom: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.finances {
+  width: 300px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 25px;
+  font-size: large;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.top3income {
+  width: 300px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 25px;
+  font-size: large;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+#income {
+  color: rgb(30, 255, 0);
+}
+
+#spend {
+  color: rgba(0, 0, 0);
+}
+
+#difference {
+  color: red;
+}
+
+#addBudget {
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  color: red;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+  transition: background-color 1s ease;
+}
+
+#addBudget:hover {
+  background-color: black;
+}
+
+#signOutButton {
+  position: fixed;
+  top: 0%;
+  left: 95%;
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+  color: red;
+  border-radius: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#signOutButton:hover {
+  color: black;
+}

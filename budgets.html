@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="budgets.css" />
+    <title>Budget</title>
+  </head>
+  <body>
+    <button id="addBudget">Add Budget</button>
+    <button id="signOutButton">Sign Out</button>
+    <aside id="left">
+      <select>
+        <option value="Finance Type" selected>Finance Type</option>
+        <option value="Income">Income</option>
+        <option value="Spend">Spend</option>
+      </select>
+      <input type="datetime-local" />
+      <input type="text" placeholder="Enter Category" />
+      <div class="min-max">
+        <input type="number" placeholder="Min" />
+        <input type="number" placeholder="Max" />
+      </div>
+      <button id="filterbtn">Filter</button>
+    </aside>
+    <main id="budgetContainer"></main>
+
+    <aside class="right">
+      <div class="finances">
+        <div class="count">
+          <h1 id="income">Income: 0</h1>
+          <h1 id="spend">Spend: 0</h1>
+          <h1 id="difference">Difference: 0</h1>
+        </div>
+      </div>
+      <div class="top3income">
+        <h3>Top 3 income source</h3>
+      </div>
+    </aside>
+    <script src="budgets.js"></script>
+  </body>
+</html>
